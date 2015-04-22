@@ -1,0 +1,26 @@
+
+img.etalage_small_thumb {
+	width: 100px !important;
+    height:  auto !important;
+}
+img.etalage_small_thumb-new {
+	width: 100px !important;
+    height:  auto !important;
+}
+
+ul#etalage.etalage{
+	width:460px !important;
+
+	height:405px !important;
+}
+li.etalage_small_thumbs {
+	width:450px !important;
+	top : 357px !important;
+}
+
+img.text-center-new{
+	position : relative !important;
+	width:10% !important;
+	margin-left: 47% !important;
+	padding-top: 300px !important;
+}
