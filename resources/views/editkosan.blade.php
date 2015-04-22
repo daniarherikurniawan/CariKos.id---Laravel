@@ -14,9 +14,9 @@
 			<div class="content-bar">
 				<div class="single-page">
 					<ul class="product-head">
-						<li><a href="redirecthome">Home</a> <span>::</span></li>
-						<li><a href="kosansaya">Daftar kos</a> <span>::</span></li>
-						<li class="active-page">Edit kos</li>
+						<div class="text-left ">
+							<a type="button" href="{{ URL::previous() }}" class="text-left btn btn-btn btn-info">Back</a>
+						</div>
 						<div class="clear"> </div>
 					</ul>
 					<!-- Include the Etalage files -->
@@ -106,17 +106,66 @@
 						</div>
 					</div>
 					<div class="details-left-info">
-						<div class="contact2">
+						
+						<div class="col-md-12 contact2">
 							<h3 class="text-center" >Deskripsi</h3>
-							{!! Form::open(['class'=>'text-right','url'=>"checkdatakosan", 'method'=>'PATCH'])!!}
-							<input type="text" class="text" value="{{$kosan->lokasi}}" name='lokasi' onfocus="if (this.value == 'Lokasi'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Lokasi';}" required/>
-							<input type="text" class="text" value="{{$kosan->harga}}" name='harga' onfocus="if (this.value == 'Harga'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Harga';}" required/>
-							<input type="text" class="text" value="{{$kosan->nama_pemilik}}" name='nama_pemilik' onfocus="if (this.value == 'Nama Pemilik'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Nama Pemilik';}" required/>
-							<input type="text" class="text" value="{{$kosan->no_tlp}}" name='no_tlp' onfocus="if (this.value == 'Nomor Telepon'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Nomor Telepon';}" required/>
-							
-							<textarea name='deskripsi_fasilitas'  onfocus="if (this.value == 'Fasilitas'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Fasilitas';}">{{$kosan->deskripsi_fasilitas}} </textarea>
-							
-							<textarea name='deskripsi_kondisi'  onfocus="if (this.value == 'Kondisi'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Kondisi';}">{{$kosan->deskripsi_kondisi}} </textarea>
+							{!! Form::open(['class'=>'text-right','url'=>"checkeditkosan", 'method'=>'PATCH'])!!}
+							<div class="row">
+								<div class="text-left col-md-4">
+									<br>
+									<p>Lokasi :</p>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="text" value="{{$kosan->lokasi}}" name='lokasi' onfocus="if (this.value == 'Lokasi'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Lokasi';}" required/>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<div class="text-left col-md-4">
+									<br>
+									<p>Harga :</p>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="text" value="{{$kosan->harga}}" name='harga' onfocus="if (this.value == 'Harga'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Harga';}" required/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-left col-md-4">
+									<br>
+									<p>Nama Pemilik :</p>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="text" value="{{$kosan->nama_pemilik}}" name='nama_pemilik' onfocus="if (this.value == 'Nama Pemilik'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Nama Pemilik';}" required/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-left col-md-4">
+									<br>
+									<p>Nomor Telepon :</p>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="text" value="{{$kosan->no_tlp}}" name='no_tlp' onfocus="if (this.value == 'Nomor Telepon'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Nomor Telepon';}" required/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-left col-md-4">
+									<br>
+									<p>Fasilitas :</p>
+								</div>
+								<div class="col-md-8">
+									<textarea name='deskripsi_fasilitas'  onfocus="if (this.value == 'Fasilitas'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Fasilitas';}">{{$kosan->deskripsi_fasilitas}} </textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-left col-md-4">
+									<br>
+									<p>Deskripsi Kondisi :</p>
+								</div>
+								<div class="col-md-8">
+									<textarea name='deskripsi_kondisi'  onfocus="if (this.value == 'Kondisi'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Kondisi';}">{{$kosan->deskripsi_kondisi}} </textarea>
+								</div>
+							</div>
 							
 						</div>
 

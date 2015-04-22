@@ -14,9 +14,9 @@
 			<div class="content-bar">
 				<div class="single-page">
 					<ul class="product-head">
-						<li><a href="redirecthome">Home</a> <span>::</span></li>
-						<li><a href="kosansaya">Daftar kos</a> <span>::</span></li>
-						<li class="active-page">Tambah kos</li>
+						<div class="text-left ">
+							<a type="button" href="{{ URL::previous() }}" class="text-left btn btn-btn btn-info">Back</a>
+						</div>
 						<div class="clear"> </div>
 					</ul>
 					<!-- Include the Etalage files -->
@@ -65,6 +65,7 @@
 					<div class="details-left-slider">
 						<ul id="etalage">
 							<?php if(count($files)==0){ ?>
+							
 							<li>
 								<a href="optionallink.html">
 									<img  class="etalage_thumb_image" src="images/empty.jpg" />

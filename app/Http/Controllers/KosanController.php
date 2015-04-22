@@ -28,7 +28,22 @@ class KosanController extends Controller {
 	public function showListKosan()
 	{
 		\Session::put('active',"Daftar Tempat Kos");
-		return view('listkosan');
+		$arrayKosan = DB::table('tempat_kos')
+			->get();
+		return view('listkosan',compact('arrayKosan'));
+	}
+	
+	public function redirectDetailKosan($id)
+	{
+		\Session::put('id_detail',$id);
+		
+		return redirect('detailkosan');
+	}
+
+	public function showDetailKosan()
+	{
+		$kosan = Kosan::find(\Session::get('id_detail'));
+		return view('detailkosan',compact('kosan'));
 	}
 
 	public function showListKosanSaya()
@@ -330,6 +345,23 @@ class KosanController extends Controller {
 		}
 	}
 
+	public function checkEditKosan() {
+			$kosan = Kosan::find(\Session::get('id_edited'));
+			$kosan->lokasi = (\Request::get('lokasi'));
+
+			$kosan->nama_pemilik = \Request::get('nama_pemilik');
+			$kosan->no_tlp = (\Request::get('no_tlp'));
+
+			$kosan->harga = (\Request::get('harga'));
+			$kosan->deskripsi_fasilitas = (\Request::get('deskripsi_fasilitas'));
+			$kosan->deskripsi_kondisi = (\Request::get('deskripsi_kondisi'));
+			$kosan->save();
+
+			$url = "kosansaya";
+	    	$str = "Anda berhasil mengedit kamar kos tersebut!";
+	    	return view("status.success",compact("str"),compact('url'));
+	}
+
 	function Delete($path)
 	{
 	    if (is_dir($path) === true)
@@ -351,6 +383,8 @@ class KosanController extends Controller {
 
 	    return false;
 	}
+
+
 
 
 }

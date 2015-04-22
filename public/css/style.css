@@ -955,7 +955,7 @@ font-size: 0.875em;
 font-weight: 600;
 }
 .product-info-price {
-float: right;
+float: left;
 background: #fff;
 width: 27%;
 text-align: center;

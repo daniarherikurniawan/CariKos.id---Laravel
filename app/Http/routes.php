@@ -35,5 +35,7 @@ Route::get('redirecteditkosan', 'KosanController@EditKosan');
 Route::get('deleteimagetumb/{file}', 'KosanController@deleteImageTumb');
 Route::get('deleteimage/{file}', 'KosanController@deleteImage');
 Route::patch('uploadgambaredit', 'KosanController@uploadForEdit');
-
 Route::patch('checkdatakosan', 'KosanController@checkDataKosan');
+Route::get('redirectdetailkosan/{id}', 'KosanController@redirectDetailKosan');
+Route::patch('checkeditkosan', 'KosanController@checkEditKosan');
+Route::get('detailkosan', 'KosanController@showDetailKosan');

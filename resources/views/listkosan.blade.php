@@ -47,73 +47,36 @@
 <div class="col-md-9 ctnt-bar">
 		<div class="content-bar">
 				<ul class="product-head">
-					<li><a href="index.html">Home</a> <span>::</span></li>
-					<li class="active-page">BOATS</li>
+					<h3>Kamar Baru Bulan ini :</h3>
 					<div class="clear"> </div>
 				</ul>
 				<div class="products-row ">
-					<h3>Today's Products</h3>
-					<a href="single.html"><div class="product-grid-new boats-grid">
-						<div class="more-product-info"><span> </span></div>						
+					@foreach ($arrayKosan as $kosan)
+					<a href="single.html">
+					<div class="product-grid">				
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/boats1.jpg" alt="">
-							<div class="b-wrapper-new">
-							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
-							<a href="single.html" class="btns">Buy Now</a>
-							</h4>
-							</div>
-						</div>						
-						<div class="product-info">
-							<div class="product-info-cust">
-								<a href="details.html">Details</a>
-							</div>
-							<div class="product-info-price">
-								<a href="details.html">&#8356;380</a>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div></a>
-					<a href="single.html"><div class="product-grid-new boats-grid">
-						<div class="more-product-info"><span> </span></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/boats2.jpg" alt="">
+
+						<img src="images/gambar_kosan/kosan{{$kosan->id_pemilik}}/{{$kosan->id}}/cover.jpg" alt="">
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
-							<a href="single.html" class="btns">Buy Now</a>
+							<a href="redirectdetailkosan/{{$kosan->id}}" class="btns">Detail</a>
 							</h4>
 							</div>
-						</div>						
+										
+						
+					</div>					
 						<div class="product-info">
-							<div class="product-info-cust">
-								<a href="details.html">Details</a>
-							</div>
 							<div class="product-info-price">
-								<a href="details.html">&#8356;380</a>
+								<a href="details.html">Harga</a>
 							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div></a>
-					<a href="single.html"><div class="product-grid-new">
-						<div class="more-product-info"><span> </span></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/boats3.jpg" alt="">
-							<div class="b-wrapper-new">
-							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
-							<a href="single.html" class="btns">Buy Now</a>
-							</h4>
-							</div>
-						</div>						
-						<div class="product-info">
 							<div class="product-info-cust">
-								<a href="details.html">Details</a>
-							</div>
-							<div class="product-info-price">
-								<a href="details.html">&#8356;380</a>
+								<a href="details.html">Rp{{" ".$kosan->harga}}</a>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 					</div></a>
 					
+					@endforeach
 					
 					<div class="clearfix"></div>
 				</div>
