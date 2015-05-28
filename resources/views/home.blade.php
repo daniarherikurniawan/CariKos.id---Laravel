@@ -100,10 +100,9 @@ $(function () {
 	<h2>Bantuan</h2><br><br>
 	<div class="speed-boats1">
 		<div class="col-md-4 boat-info">
-			<h3>03.  UNCOVER MANY</h3>
-			<p>But also the leap into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release of 	etraset sheets containing Lorem Ipsum 
-				passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				<a href="#">More</a>
+			<h3>Pemilik kos</h3>
+			<p>Anda sebagai pemilik kos bisa mempromosikan kamar kos dengan mudah melalui website ini. Anda harus menyediakan keterangan mengenai tempat kos berupa : lokasi, harga, nama pemilik, nomor telepon, fasilitas, deskripsi kondisi dan foto / gambar tempat kos.</p>
+				<a href="#">Pelajari</a>
 				<div class="arrow"></div>
 			</div>
 			<div class="col-md-8 boat-pic">			 
@@ -111,7 +110,7 @@ $(function () {
 					<img class="port-pic" src="images/boat1.jpg" />
 					<div class="b-wrapper">
 						<h4 class="b-animate b-from-left  b-delay03 ">							
-							<button>KNOW MORE</button>
+							<button>Pelajari</button>
 						</h4>
 					</div>
 				</a>
@@ -125,17 +124,16 @@ $(function () {
 					<img class="port-pic" src="images/boat2.jpg" />
 					<div class="b-wrapper">
 						<h4 class="b-animate b-from-left  b-delay03 ">							
-							<button>KNOW MORE</button>
+							<button>Pelajari</button>
 						</h4>
 					</div>
 				</a>
 			</div>
 
 			<div class="col-md-4 boat-info">
-				<h3>04.  LEX</h3>
-				<p>But also the leap into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release of 	etraset sheets containing Lorem Ipsum 
-					passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					<a href="#">More</a>
+				<h3>Pencari Kos</h3>
+				<p>Anda sebagai pencari kos bisa melakukan pencarian tempat kos melalui website ini. Tempat kos dikelompokkan berdasarkan lokasi dan bisa ditampilkan terurut berdasarkan harga dan jumlah review terbanyak.</p>
+					<a href="#">Pelajari</a>
 					<div class="arrow nip2"></div>
 				</div>
 				<div class="clearfix"></div>
