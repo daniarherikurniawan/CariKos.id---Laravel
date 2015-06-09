@@ -16,12 +16,19 @@ class CreateTempatKosTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('id_pemilik');
-			$table->string('lokasi');
-			$table->string('harga');
-			$table->string('deskripsi_fasilitas');
-			$table->string('deskripsi_kondisi');
-			$table->string('nama_pemilik');
-			$table->string('no_tlp');
+			$table->integer('harga_termurah');
+			$table->integer('harga_termahal');
+			$table->integer('dilihat')->default(0);
+			$table->integer('jumlah_ulasan');
+			$table->string('id_ulasan',512);
+			$table->string('id_pengulas',512);
+			$table->string('provinsi',40);
+			$table->string('kota',40);
+			$table->string('lokasi',200);
+			$table->string('deskripsi_fasilitas',1000);
+			$table->string('deskripsi_kondisi',1000);
+			$table->string('nama_pemilik',40);
+			$table->string('no_tlp',40);
 			$table->timestamps();
 		});
 	}

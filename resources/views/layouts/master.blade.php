@@ -24,21 +24,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<ul>
 				<li <?php if(\Session::get('active')=="Home"){ echo "class=\"active\"";} ?>><a href="redirecthome">Home</a></li>
 				<li  <?php if(\Session::get('active')=="Daftar Tempat Kos"){ echo "class=\"active\"";} ?>><a href="listkosan">Daftar Tempat Kos</a></li>
-				<li></li>
+				
 				<?php if(\Session::has('id')){ ?>
 				<li  <?php if(\Session::get('active')=="Kelola Kos Anda"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="kosansaya">Kelola Kos Anda</a></li>
-				<li></li>
 				<li <?php if(\Session::get('active')=="Edit Akun"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="editakun">Edit Akun</a></li>				
-				<li></li>
-				<li <?php if(\Session::get('active')=="Logout"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="logout">Logout</a></li>
-				<li></li>
-				<?php }else{ ?>
-				<li <?php if(\Session::get('active')=="Tentang Kami"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="aboutUs">Tentang Kami</a></li>
-				<li></li>
 				<li <?php if(\Session::get('active')=="Bantuan"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="help">Bantuan</a></li>
-				<li></li>
-				<li <?php if(\Session::get('active')=="Login"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="login">Login</a></li>
-				<li></li>
+	
+				<li <?php if(\Session::get('active')=="Logout"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="logout">Keluar</a></li>
+	
+				<?php }else{ ?>
+				<li <?php if(\Session::get('active')=="Bantuan"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="help">Bantuan</a></li>
+	
+				<li <?php if(\Session::get('active')=="Tentang Kami"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="aboutUs">Tentang Kami</a></li>
+	
+				<li <?php if(\Session::get('active')=="Login"){ echo "class=\"active\"";} ?>><a class="page-scroll" href="login">Masuk</a></li>
+	
 				<?php } ?>
 				<div class="clearfix"></div>
 			</ul>	
@@ -68,7 +68,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li><a href="about.html">About Us</a></li>
-								<li><a href="service.html">Shoponline</a></li>
 								<li><a href="404.html">Help</a></li>
 								<li><a href="carrers.html">Service</a></li>
 								<li><a href="contact.html">Contact</a></li>

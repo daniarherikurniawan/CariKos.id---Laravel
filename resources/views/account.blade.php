@@ -5,7 +5,7 @@
 	<div class="contact-form">
 			<div class="container">
 				<div class="col-md-3 contact2"></div>
-				<div class="col-md-6 contact2">
+				<div class="col-md-4 contact2">
 					<h3 class="text-center">Edit Akun</h3>
 						{!! Form::open(['class'=>'text-right','url'=>"checkupdate", 'method'=>'PATCH'])!!}
 						<input type="text" class="text" name='nama' value="{{$user->nama}}"  onblur="if (this.value == '') {this.value = '{{$user->nama}}';}" required >

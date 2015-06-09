@@ -1,5 +1,5 @@
 <?php 
-	 header("Refresh: 3 ; url=$url");
+	 header("Refresh: 1 ; url=$url");
  ?>
 @extends("layouts.master")
 @section('content')

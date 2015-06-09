@@ -115,7 +115,7 @@
 									<br>
 									<p>Lokasi :</p>
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 detailkosan">
 									<input type="text" class="text" value="{{$kosan->lokasi}}" name='lokasi' onfocus="if (this.value == 'Lokasi'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Lokasi';}" required/>
 								</div>
 							</div>
@@ -126,8 +126,8 @@
 									<br>
 									<p>Harga :</p>
 								</div>
-								<div class="col-md-8">
-									<input type="text" class="text" value="{{$kosan->harga}}" name='harga' onfocus="if (this.value == 'Harga'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Harga';}" required/>
+								<div class="col-md-8 detailkosan">
+									<input type="text" class="text" value="{{$kosan->harga_termurah}}" name='harga_termurah' onfocus="if (this.value == 'Harga'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Harga';}" required/>
 								</div>
 							</div>
 							<div class="row">
@@ -135,7 +135,7 @@
 									<br>
 									<p>Nama Pemilik :</p>
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 detailkosan">
 									<input type="text" class="text" value="{{$kosan->nama_pemilik}}" name='nama_pemilik' onfocus="if (this.value == 'Nama Pemilik'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Nama Pemilik';}" required/>
 								</div>
 							</div>
@@ -144,7 +144,7 @@
 									<br>
 									<p>Nomor Telepon :</p>
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 detailkosan">
 									<input type="text" class="text" value="{{$kosan->no_tlp}}" name='no_tlp' onfocus="if (this.value == 'Nomor Telepon'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Nomor Telepon';}" required/>
 								</div>
 							</div>
@@ -153,7 +153,7 @@
 									<br>
 									<p>Fasilitas :</p>
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 detailkosan">
 									<textarea name='deskripsi_fasilitas'  onfocus="if (this.value == 'Fasilitas'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Fasilitas';}">{{$kosan->deskripsi_fasilitas}} </textarea>
 								</div>
 							</div>
@@ -162,7 +162,7 @@
 									<br>
 									<p>Deskripsi Kondisi :</p>
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 detailkosan">
 									<textarea name='deskripsi_kondisi'  onfocus="if (this.value == 'Kondisi'){this.value = '';}" onblur="if (this.value == '') {this.value = 'Kondisi';}">{{$kosan->deskripsi_kondisi}} </textarea>
 								</div>
 							</div>
